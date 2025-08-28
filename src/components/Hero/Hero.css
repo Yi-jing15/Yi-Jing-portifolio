@@ -1,0 +1,187 @@
+/* .hero {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 90vh; 
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 80%;
+  width: max-content;
+}
+
+.hImg img {
+  width: 80%;
+  object-fit: cover;
+  margin-top: 100px;
+}
+
+.hSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hTitle {
+  margin-top: 80px;
+  font-size: 80px;
+  color: var(--second-color);
+}
+
+.hTitle span {
+  color: var(--main-color);
+}
+
+.hTitle2 {
+  margin-left: 30%;
+  font-size: 80px;
+  color: var(--main-color);
+}
+
+.hTitle2 span {
+  margin-left: 30%;
+  color: var(--second-color);
+}
+
+.hTitle2 .span1 {
+  margin-left: 50%;
+
+  color: var(--main-color);
+}
+
+.hTitle2 .span1 span {
+  margin-left: 50%;
+  color: var(--second-color);
+} */
+
+
+.hero {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 80%;
+  width: max-content;
+}
+
+.hImg img {
+  height: 70%;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.hSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+.hTitle {
+  margin-top: 80px;
+  font-size: 80px;
+  color: var(--second-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hTitle span {
+  color: var(--main-color); 
+}
+
+.hTitle2 {
+  margin-left: 65%;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--main-color);
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hTitle2 span {
+  color: #ff5e5e;
+  font-weight: bold;
+}
+
+.hTitle2 .span1 {
+  color: var(--second-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+
+}
+
+.hTitle2 .span1 span {
+  color: var(--main-color);
+}
+
+
+@media (max-width: 768px) {
+  .hTitle {
+    font-size: 48px;
+    margin-top: 40px;
+  }
+
+  .hTitle2 {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hTitle2 .span1 {
+    display: block;
+    margin-left: 0;
+  }
+
+  .hSection {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bg{
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hTitle {
+    font-size: 36px;
+  }
+
+  .hTitle2 {
+    font-size: 28px;
+  }
+}

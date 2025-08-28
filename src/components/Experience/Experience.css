@@ -1,0 +1,137 @@
+
+    .ExperienceTitle{
+        color: var(--main-color);
+        font-weight: bold;
+        display: flex;
+        justify-content: center; 
+    }
+    .timeline{
+        position: relative;
+        max-width: 1200px;
+        margin: 100px auto;   
+    }
+  
+
+
+    .containerExp h2{
+        text-align: left;
+        font-size: 25px;
+    }
+    .containerExp{
+        padding: 10px 50px;
+        position: relative;
+        width: 50%;
+    }
+
+    .textBox{
+        padding: 20px 30px;
+        background-color: #BC3D23;
+        position: relative;
+        border-radius: 6px;
+        font-size: 15px;
+        color: #F6E4C8;
+    }
+    .leftContainer{
+        left: 0%;
+    }
+    .rightContainer{
+        left: 50%;
+    }
+    .containerExp img{
+        position: absolute;
+        width: 40px;
+        border-radius: 50%;
+        right: -20px;
+        top: 32px;
+        z-index: 10;
+    }
+    .rightContainer img{
+        left: -20px;
+    }
+
+    /* :: 偽元素 */
+    .timeline::after{
+        /*就算沒有要加入文字，也一定要有content屬性，內容留空""即可*/
+        content: '';  
+        position: absolute;
+        width: 6px;
+        height: 100%;
+        background: #F6E4C8;
+        top: 0;
+        left: 50%;
+        margin-left: -3px;
+        z-index: -1;  
+        animation: moveline 6s linear forwards; 
+    }
+
+
+    @keyframes moveline{
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+
+    .textBox h2{
+        font-weight: 600;
+    }
+    .textBox small{
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    .leftContainer-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid #BC3D23;
+        right: -14px;
+        
+    }
+    .rightContainer-arrow{
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 28px;
+        z-index: 1;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid #BC3D23;
+        left: -14px;
+    }
+
+    @media  screen and (max-width: 480px){
+        .timeline{
+            margin: 50px auto;
+        }
+        .timeline::after{
+            left: 31px;
+        }
+        .containerExp{
+            width: 100%;
+            padding-left: 80px;
+            padding-right: 25px;
+        }
+        .textBox{
+            font-size: 13px;
+        }
+        .textBox small{
+            margin-bottom: 10px;
+        }
+        .rightContainer{
+            left: 0;
+        }
+        .leftContainer img, .rightContainer img{
+            left: 10px;
+        }
+        .leftContainer-arrow, .rightContainer-arrow{
+            border-right: 15px solid #BC3D23;
+            border-left: 0;
+            left: -14px;
+        }
+    }

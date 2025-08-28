@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "LXGW+WenKai+TC";
+    scroll-behavior: smooth;  
+}
+:root{
+    --bg-color:#120A06 ;
+    --second-bg-color:#161616;
+    --text-color:#fff;
+    --main-color:#F6E4C8;
+    --second-color:#BC3D23;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--bg-color);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1536px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+section {
+  /* min-height: 100vh; */
+  margin-top: 100px; 
+  margin-bottom: 50px;
+  scroll-snap-align: center;
+}
+
+section#hero {
+  margin-top: 0px; 
+}
+
+section#contact, section#skills {
+  min-height: auto;
+  height: auto;
+}
+
+
+h2{
+    font-size: 40px;
+}
+
+body.swal2-shown {
+  padding-right: 0 !important;
+}
+
+/* alert按鈕 */
+.my-confirm-button {
+  background-color:var(--main-color) !important; 
+  color:var(--second-color) !important;           
+  border: 2px solid var(--second-color);
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.my-confirm-button:hover {
+  background-color: var(--second-color) !important;
+  color: var(--main-color) !important;  
+}
