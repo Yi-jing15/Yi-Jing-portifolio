@@ -37,21 +37,20 @@ Three.js
 如果你希望在本地運行這個項目，可以按照以下步驟進行：
 
 1. 克隆倉庫
-git clone https://github.com/yourusername/resume-website.git
+git clone https://github.com/Yi-jing15/Yi-Jing-portifolio.git
 
-2. 安裝依賴（如果你使用了 JavaScript 框架如 React）
-cd resume-website
+2. 安裝依賴
 npm install
 
 3. 運行本地伺服器
 npm run dev
 
 
-然後打開瀏覽器，訪問 http://localhost:3000 即可查看網站。
+然後打開瀏覽器，即可查看網站。
 
 
 聯繫我
 
 Email: po910216@gmail.com
 
-GitHub: github.com/yourusername
+GitHub: https://github.com/Yi-jing15
