@@ -12,7 +12,7 @@
 
 工作經歷：我過去的工作經歷和重要的項目經驗。
 
-聯繫方式：我的社交媒體、電子郵件等聯繫方式。
+聯繫方式：我的電子郵件等聯繫方式。
 
 預覽
 
@@ -26,11 +26,11 @@ CSS3
 
 JavaScript
 
-React（可選，若你使用了框架）
+React.js
 
-Bootstrap（可選，若你使用了框架）
+Three.js
 
-或其他任何你使用的技術
+
 
 如何運行此項目
 
@@ -44,26 +44,14 @@ cd resume-website
 npm install
 
 3. 運行本地伺服器
-npm start
+npm run dev
 
 
 然後打開瀏覽器，訪問 http://localhost:3000 即可查看網站。
 
-使用到的工具與技術
-
-GitHub Pages
-（如果是靜態網站，部署於 GitHub Pages）
-
-Visual Studio Code
-（編輯代碼）
-
-Netlify
-（可選，若你選擇用 Netlify 部署）
 
 聯繫我
 
-Email: your.email@example.com
-
-LinkedIn: linkedin.com/in/yourprofile
+Email: po910216@gmail.com
 
 GitHub: github.com/yourusername
